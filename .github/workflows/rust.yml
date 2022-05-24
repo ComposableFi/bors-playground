@@ -19,7 +19,8 @@ jobs:
     - name: Run tests
       run: cargo test
 
-  ci:
+  ci-success:
+    name: ci
     if: ${{ success() }}
     needs:
       - test
