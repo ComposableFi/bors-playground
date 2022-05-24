@@ -19,11 +19,11 @@ jobs:
     - name: Run tests
       run: cargo test
 
-  name: ci
-  if: ${{ success() }}
-  needs:
-    - test
-  runs-on: ubuntu-latest
-  steps:
+  ci:
+    if: ${{ success() }}
+    needs:
+      - test
+    runs-on: ubuntu-latest
+    steps:
     - name: Check CI Pass
       run: exit 0
