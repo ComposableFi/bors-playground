@@ -1,5 +1,5 @@
 # bors-playground
-Freely use Bors to learn a different way of merging PRs
+Freely use Bors to learn a different way of merging PRs. Test out some of the commands below on your PR, and see what happens when tests fail and pass.
 
 ## What is Bors-NG
 
@@ -27,3 +27,4 @@ bors retry | Run the previous command a second time.
 bors p=[priority] | Set the priority of the current pull request. Pull requests with different priority are never batched together. The pull request with the bigger priority number goes first.
 bors r+ p=[priority] | Set the priority, run the test suite, and push to master (shorthand for doing p= and r+ one after the other).
 bors merge p=[priority] | Equivalent to `bors r+ p=[priority]`
+
