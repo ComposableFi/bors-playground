@@ -1,9 +1,0 @@
-Bors:
-  name: ci
-  if: ${{ success() }}
-  needs:
-    - Test
-  runs-on: ubuntu-latest
-  steps:
-    - name: Check CI Pass
-      run: exit 0
